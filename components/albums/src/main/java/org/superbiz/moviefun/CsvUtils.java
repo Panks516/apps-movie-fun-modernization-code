@@ -14,7 +14,6 @@ public class CsvUtils {
         List<T> results = new ArrayList<>();
 
         MappingIterator<T> iterator = objectReader.readValues(inputStream);
-
         while (iterator.hasNext()) {
             results.add(iterator.nextValue());
         }

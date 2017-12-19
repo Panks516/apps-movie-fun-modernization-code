@@ -36,6 +36,7 @@ public class MoviesBean {
     @PersistenceContext
     private EntityManager entityManager;
 
+
     public Movie find(Long id) {
         return entityManager.find(Movie.class, id);
     }
